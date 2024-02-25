@@ -31,3 +31,32 @@
 - axios로 api호출해서 데이터 받아오기
   axios는 현재 가장 많이 사용되는 자바스크립트 HTTP 클라이언트이다.
   HTTP요청을 promise기반으로 처리한다.
+
+- axios설치
+  yarn add axios로 설치
+  fetch보다 더 많은 기술을 줌
+  일단 api를 받아올때 처음부터끝까지 받아오는게 아니라 기초설정을 해두면
+  커스텀훅으로 만들어서 따로 분리해서 만들수도있고, url을 다 안쳐도 됨
+- 버튼 누를때 api데이터 불러와보기
+  data라는 상태를 가져와서 onClick시에 axios.get을 활용해서 url을 넣고
+  성공시 then을 이용하여 response를 받아와 setData를 사용해서 response.data를 넣어줄수있음.
+  물론json으로 바꿔야함
+
+- 뉴스 데이터 받아오기
+  똑같이 하는데 async와 await활용하면 됨
+  onClick시에 async함수를 만들어서 try에 axios.get을 활용하여 변수에 담고 그변수를 setDData를
+  통하여 data값을 바꿀수있음
+  catch를 이용하여 만약 오류가날시에 에러를 내보냄
+
+- 뉴스 데이터 뿌리기
+  item컴포넌트를 만들어서 map으로 뿌리기
+
+- 카테고리 컴포넌트만들기
+  카테고리 배열을 만들어서 map으로 뿌리고
+  클릭시에 선정했다고 그 클릭한 onSelect한 카테고리를
+  변수변경하면 네비게이터로 이동하고 axios에다가
+  그 카테고리를 넣는다.
+
+- 스타일넣기
+
+끝
