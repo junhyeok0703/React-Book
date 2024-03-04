@@ -17,5 +17,5 @@
     props로 여러번 거쳐서 원하는 상태와 함수를 전달했지만 context를 만들어서 한번에 원하는 값을 받아 와서 사용할수있다.
 
   15.2 context api 사용법 익히기
-
   - createcontext로 context를 만들수있다.
+  - 
