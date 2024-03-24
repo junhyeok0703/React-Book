@@ -18,4 +18,12 @@
 
   15.2 context api 사용법 익히기
   - createcontext로 context를 만들수있다.
-  - 
+  ``` bash
+  import { createContext } from "react";
+
+  const Colorcontext = createContext({ color: "black" });
+
+  export default Colorcontext;
+
+  ```
+  이런식으로 
